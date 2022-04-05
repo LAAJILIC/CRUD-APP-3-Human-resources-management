@@ -1,21 +1,22 @@
 import { GraphQLObjectType, GraphQLSchema } from "graphql";
 import { GET_ALL_EMPLOYEES } from './Queries/Employee';
-import { CREATE_EMPLOYEE, DELETE_EMPLOYEE } from './Mutations/Employee';
+import { CREATE_EMPLOYEE, DELETE_EMPLOYEE, UPDATE_EMPLOYEE_PASSWORD } from './Mutations/Employee';
 
 const RootQuery = new GraphQLObjectType({
     name: "RootQuery",
     fields: {
         getAllEmployees: GET_ALL_EMPLOYEES,
     },
-})
+});
 
 const Mutation = new GraphQLObjectType({
     name: "Mutation",
     fields: {
       createEmployee: CREATE_EMPLOYEE,
       deleteEmployee: DELETE_EMPLOYEE,
+      updatePassword: UPDATE_EMPLOYEE_PASSWORD,
     },
-})
+});
 
 
 export const schema = new GraphQLSchema({
