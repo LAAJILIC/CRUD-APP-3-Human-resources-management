@@ -17,3 +17,13 @@ export const CREATE_EMPLOYEE = gql`
           }
       }
 `;
+
+export const DELETE_EMPLOYEE = gql`
+  mutation deleteEmployee($id: ID!){
+          deleteEmployee(id: $id)
+          {
+            #   what we want to return here
+            response
+          }
+      }
+`;
