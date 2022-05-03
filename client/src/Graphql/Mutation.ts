@@ -18,6 +18,20 @@ export const CREATE_EMPLOYEE = gql`
       }
 `;
 
+export const UPDATE_EMPLOYEE_PASSWORD = gql`
+  mutation updatePassword(
+    #    to define types of the input - typesciprt
+      $name: String!
+      $oldPassword: String!
+      $newPassword: String!) {
+        updatePassword(name: $name oldPassword: $oldPassword newPassword: $newPassword)
+          {
+            response
+          }
+      }
+`;
+
+
 export const DELETE_EMPLOYEE = gql`
   mutation deleteEmployee($id: ID!){
           deleteEmployee(id: $id)

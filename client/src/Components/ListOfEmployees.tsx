@@ -13,11 +13,11 @@ function ListOfEmployees() {
      {data && data.getAllEmployees.map((employee: any) => {
          return (
              <div>
-                 {employee.name} , {employee.email} , {employee.department}
+                 {employee.name} / {employee.email} / {employee.department}
                  <button onClick={() => {deleteEmployee({ variables: { id: employee.id } });}}>Delete Employee account</button>
              </div>
          );
-     })};
+     })}
     </div>
   );
 }
