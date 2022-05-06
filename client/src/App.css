@@ -6,14 +6,107 @@
    body {
     background-color: rgb(134, 199, 243);
     text-align:left;
-    display:block;
+    display: block;
     justify-content: space-between;
     align-items: flex-end;
     flex-direction: column;
-    width: 1000px;
+    width: 1200px;
     min-height: 700px;
-    background-color: rgb(74, 130, 250);
-    margin: 100px 10px;
+    margin: 100px 150px;
     padding-bottom: 100px;
     padding-top: 100px;
   }
+
+  .input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 0px 0 0 0px;
+    border: 2px solid #060258;
+    outline: none;
+    width: 200px;
+    margin: 5px;
+    background: rgb(77, 110, 242);
+    color: rgb(255, 255, 255);
+    font-size: smaller;
+  }
+  .input::placeholder {
+    color: #120000;
+    font-size: smaller;
+  }
+
+  .button {
+    padding: 16px;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      120deg,
+      rgb(3, 3, 146) 0%,
+      rgb(42, 110, 236) 100%
+    );
+    color: #120000;
+    text-transform: capitalize;
+  }
+
+  .password-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 0px 0 0 0px;
+    border: 2px solid #6c3002;
+    outline: none;
+    width: 200px;
+    margin: 5px;
+    background: rgb(243, 128, 66);
+    color: rgb(15, 1, 1);
+  }
+  .password-input::placeholder {
+    color: #120701;
+    font-size: smaller;
+  }
+
+  .password-button {
+    padding: 16px;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      120deg,
+      rgb(109, 29, 2) 0%,
+      rgb(241, 91, 5) 100%
+    );
+    color: rgb(18, 1, 1);
+    text-transform: capitalize;
+  }
+
+
+  .delete-form {
+    display: flex;
+    align-items: center;
+    margin: 4px;
+  }
+  .delete-input {
+    margin: 10px 10px;
+    outline: none;
+    color: #120000;
+    background:
+    rgb(77, 110, 242) 0%;
+  
+    padding: 16px;
+    border-radius: 5px;
+    width: 60%;
+    }
+  .delete-button {
+      padding: 14px;
+      border: none;
+      border-radius: 4px 4px 4px 4px;
+      cursor: pointer;
+      outline: none;
+      background: linear-gradient(
+        120deg,
+        rgb(3, 3, 146) 0%,
+      rgb(42, 110, 236) 100%
+      );
+      color: rgb(18, 1, 1);
+      text-transform: capitalize;
+    }
+  

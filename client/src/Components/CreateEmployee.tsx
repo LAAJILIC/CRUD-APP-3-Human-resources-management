@@ -13,11 +13,11 @@ function CreateEmployee() {
   const [createmployee, { error }] = useMutation(CREATE_EMPLOYEE);
   return (
     <div className="create-employee">
-         <input type="text" placeholder="Name of the employee" onChange={(e) => {setName(e.target.value);}}/>
-         <input type="text" placeholder="department of the employee" onChange={(e) => {setDepartment(e.target.value);}}/>
-         <input type="text" placeholder="email of the employee" onChange={(e) => {setEmail(e.target.value);}}/>
-         <input type="text" placeholder="password of the employee" onChange={(e) => {setPassword(e.target.value);}}/>
-          <button
+         <input type="text" placeholder="Name of the employee" className='input' onChange={(e) => {setName(e.target.value);}}/>
+         <input type="text" placeholder="department of the employee" className='input' onChange={(e) => {setDepartment(e.target.value);}}/>
+         <input type="text" placeholder="email of the employee" className='input' onChange={(e) => {setEmail(e.target.value);}}/>
+         <input type="text" placeholder="password of the employee" className='input' onChange={(e) => {setPassword(e.target.value);}}/>
+          <button className='button'
            onClick={() => {
             createmployee({
                variables: { name: name, department: department, email: email, password: password},

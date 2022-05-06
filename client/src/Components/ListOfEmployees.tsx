@@ -12,9 +12,9 @@ function ListOfEmployees() {
     <div>
      {data && data.getAllEmployees.map((employee: any) => {
          return (
-             <div>
-                 {employee.name} / {employee.email} / {employee.department}
-                 <button onClick={() => {deleteEmployee({ variables: { id: employee.id } });}}>Delete Employee account</button>
+             <div className='delete-form'>
+                 <div className='delete-input'> Name: {employee.name} - Email: {employee.email} - Department:  {employee.department} </div>
+                 <button className='delete-button' onClick={() => {deleteEmployee({ variables: { id: employee.id } });}}>Delete Employee account</button>
              </div>
          );
      })}

@@ -11,13 +11,13 @@ function UpdatePassword() {
     const [updatePassword, { error }] = useMutation(UPDATE_EMPLOYEE_PASSWORD);
   return (
     <div>
-        <input type="text" placeholder="the name" 
+        <input type="text" placeholder="the name" className='password-input'
         onChange={(e) => {setName(e.target.value);}}/>
-        <input type="password" placeholder="current password" 
+        <input type="password" placeholder="current password" className='password-input'
         onChange={(e) => {setCurrentPassword(e.target.value);}}/>
-        <input type="password" placeholder="new password" 
+        <input type="password" placeholder="new password" className='password-input'
         onChange={(e) => {setNewPassword(e.target.value);}}/>
-        <button onClick={() => {updatePassword({ 
+        <button className='password-button' onClick={() => {updatePassword({ 
             variables: {
                 name: name,
                 oldPassword: currentPassword,
@@ -28,4 +28,4 @@ function UpdatePassword() {
   )
 }
 
-export default UpdatePassword
+export default UpdatePassword;
